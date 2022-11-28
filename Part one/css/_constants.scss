@@ -1,0 +1,10 @@
+$grey: #c3cfe2;
+$textgrey: #333;
+$white: #fff;
+$blue-purple: #686de0;
+$border-radius: 20px;
+$part-1-width: 500px;
+
+@mixin shadow () {
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
+}

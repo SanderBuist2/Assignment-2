@@ -1,0 +1,40 @@
+.portfoliogrid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(auto-fit);
+    gap: 2%;
+    justify-content: center;
+    place-items: center;
+    
+    .griditem{
+        position: relative;
+        display: grid;
+        background-color: purple;
+        place-items: center;
+        border-radius: $border-radius;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            opacity: $visable;
+            transition: $transitiontime ease-in-out;
+            border-radius: $border-radius;
+        }
+    
+        button{
+            opacity: $invisable;
+            transition: $transitiontime ease-in-out;
+            position: absolute;
+        }
+    
+        &:hover{
+            img{
+                opacity: $invisable;
+                transform: scale(1.1);
+            }
+            button{
+                opacity: $visable;
+            }
+        }
+    }
+}

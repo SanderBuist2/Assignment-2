@@ -1,0 +1,67 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 90px;
+    grid-template-rows: 200px auto;
+    justify-content: end;
+
+    .social{
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: flex;
+
+        .sociallinks{
+            width: $socialwidth;
+            transition: .75s ease-in-out;
+
+            .blog{
+                @include social-blocks();
+                padding-left: 10px;
+                background-color: #e17b77;
+
+                .fa-laptop-code {
+                    @include social-icons();
+                }
+            }
+
+            .twitter{
+                @include social-blocks();
+                background-color: #00aced;
+
+                .fa-twitter{
+                    @include social-icons();
+                }
+            }
+
+            .linked-in{
+                @include social-blocks();
+                background-color: #007bb6;
+
+                .fa-linkedin-in{
+                    @include social-icons();
+                }
+            }
+
+            .facebook{
+                @include social-blocks();
+                background-color: #3b5998;
+
+                .fa-facebook-f{
+                    @include social-icons();
+                }
+            }
+
+            .github{
+                @include social-blocks();
+                background-color: #333;
+
+                .fa-github{
+                    @include social-icons();
+                }
+            }
+
+            &:hover{
+                transform:translate($socialmove);
+            }
+        }
+    }
+}

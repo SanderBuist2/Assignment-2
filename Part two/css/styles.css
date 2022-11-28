@@ -1,0 +1,50 @@
+.portfoliogrid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(auto-fit);
+  gap: 2%;
+  justify-content: center;
+  place-items: center;
+}
+.portfoliogrid .griditem {
+  position: relative;
+  display: grid;
+  background-color: purple;
+  place-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.portfoliogrid .griditem img {
+  width: 100%;
+  opacity: 100%;
+  transition: 250ms ease-in-out;
+  border-radius: 20px;
+}
+.portfoliogrid .griditem button {
+  opacity: 0%;
+  transition: 250ms ease-in-out;
+  position: absolute;
+}
+.portfoliogrid .griditem:hover img {
+  opacity: 0%;
+  transform: scale(1.1);
+}
+.portfoliogrid .griditem:hover button {
+  opacity: 100%;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+@media screen and (max-width: 1280px) {
+  .portfoliogrid {
+    grid-template-columns: 45% 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfoliogrid {
+    grid-template-columns: 95%;
+    gap: 1%;
+  }
+}/*# sourceMappingURL=styles.css.map */

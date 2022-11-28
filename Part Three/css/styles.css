@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  grid-template-rows: 200px auto;
+  justify-content: end;
+}
+.container .social {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+}
+.container .social .sociallinks {
+  width: 200px;
+  transition: 0.75s ease-in-out;
+}
+.container .social .sociallinks .blog {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  padding-left: 10px;
+  background-color: #e17b77;
+}
+.container .social .sociallinks .blog .fa-laptop-code {
+  padding-right: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+.container .social .sociallinks .twitter {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  background-color: #00aced;
+}
+.container .social .sociallinks .twitter .fa-twitter {
+  padding-right: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+.container .social .sociallinks .linked-in {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  background-color: #007bb6;
+}
+.container .social .sociallinks .linked-in .fa-linkedin-in {
+  padding-right: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+.container .social .sociallinks .facebook {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  background-color: #3b5998;
+}
+.container .social .sociallinks .facebook .fa-facebook-f {
+  padding-right: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+.container .social .sociallinks .github {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  padding-left: 15px;
+  background-color: #333;
+}
+.container .social .sociallinks .github .fa-github {
+  padding-right: 20px;
+  font-size: 25px;
+  line-height: 45px;
+  color: white;
+}
+.container .social .sociallinks:hover {
+  transform: translate(-140px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */

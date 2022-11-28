@@ -1,0 +1,63 @@
+.part-one {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr $part-1-width 1fr;
+    grid-template-rows: 5px 400px 30px 200px;
+    background-color: $grey;
+
+    &-header{
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+        font-size: 30px;
+        padding: 40px;
+        color: $textgrey;
+        border-radius: $border-radius;
+        background-color: $white;
+        height: 550px;
+        @include shadow();
+    }
+
+    p{
+        text-align: center;
+        position: relative;
+        top: 100px;
+        text-transform: uppercase;
+        font-size: 30px;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        color: $white;
+    }
+
+    .circle{
+        position: relative;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-color: $white;
+        padding: 8px;
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    .bottom-part-one{
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        height: 200px;
+        width: $part-1-width;
+        background-color: $blue-purple;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        a{
+            display: block;
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            position: relative;
+            top: 120px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            color: $textgrey;
+        }
+    }
+}

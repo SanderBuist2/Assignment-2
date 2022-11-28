@@ -1,0 +1,17 @@
+$socialwidth: 200px;
+$socialheigth: 50px;
+$socialmove: -140px;
+
+@mixin social-icons{
+    padding-right: 20px;
+    font-size: 25px;
+    line-height: 45px;
+    color: white;
+}
+
+@mixin social-blocks{
+    display: inline-block;
+    height: $socialheigth;
+    width: $socialwidth;
+    padding-left: 15px;
+}
